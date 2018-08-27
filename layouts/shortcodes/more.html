@@ -1,0 +1,10 @@
+<details>
+<summary>
+  {{ if len .Params | le 1 }}
+    CLICK ME: {{ .Params }}
+  {{ else }}
+    CLICK ME
+  {{ end }}
+</summary>
+{{ .Inner }}
+</details>
